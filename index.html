@@ -10,6 +10,9 @@
 </head>
 
 <body>
+
+    <!-- Header -->
+
     <header>
 
         <section class="section-start">
@@ -71,23 +74,27 @@
                             <button class="button-simple">Iniciar Sesión</button>
                         </a>
                     </li>
+                    <li class="nav__lista__li-logo-aside">
+                        <div class="logo-aside">
+                            <div class="logo-aside__circle"></div>
+                            <div class="logo-aside__circle"></div>
+                            <div class="logo-aside__circle"></div>
+                        </div>
+                    </li>
                 </ul>
             </nav>
 
         </section>
 
-        <input type="checkbox" id="check-aside">
-        <label for="check-aside" class="mostrar-aside">
+        <!-- Aside, se complementa con css y javascript -->
 
-            <div class="logo-aside">
-                <div class="logo-aside__circle"></div>
-                <div class="logo-aside__circle"></div>
-                <div class="logo-aside__circle"></div>
-            </div>
+        <aside class="aside-oculto">
 
-        </label>
-
-        <aside class="aside">
+            <figure>
+                <div class="ocultar-aside">
+                    &#88;
+                </div>
+            </figure>
 
             <section class="account">
 
@@ -190,9 +197,6 @@
             </section>
 
         </aside>
-        <label for="check-aside" class="ocultar-aside">
-            &#88;
-        </label>
 
     </header>
     <main>
@@ -348,6 +352,9 @@
         </div>
 
     </footer>
+
+    <script src="./scripts/appIndex.js"></script>
+
 </body>
 
 </html>

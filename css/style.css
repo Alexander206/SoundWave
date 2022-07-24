@@ -47,11 +47,10 @@ body {
 
 .section-start {
   height: 46px;
-  width: 92vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 30px;
+  margin: 30px 20px;
 }
 
 /* Estilos compartidos entre nav-start & nav-end */
@@ -139,7 +138,6 @@ header .nav-center li a {
 .nav__lista__li-logo-aside {
   display: flex;
   align-items: center;
-  cursor: pointer;
 }
 
 .logo-aside {
@@ -173,39 +171,15 @@ header aside {
   z-index: 1;
 }
 
-.aside {
+header aside {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.mostrar-aside {
-  display: block;
-  position: absolute;
-  top: 33px;
-  right: 20px;
-  cursor: pointer;
-}
-
-.ocultar-aside {
-  display: none;
-  position: absolute;
-  top: 33px;
-  right: 20px;
-  font-weight: bold;
-  font-size: 20px;
-  cursor: pointer;
-  transition: 0.2s;
-  z-index: 1;
-}
-
-#check-aside:checked ~ .aside {
+.aside-mostrar {
   right: 0;
-}
-
-#check-aside:checked ~ .ocultar-aside {
-  display: block;
 }
 
 .aside-separation {
@@ -215,13 +189,19 @@ header aside {
   background-color: #dbdbdb;
 }
 
-#check-aside {
-  display: none;
+/* Boton para ocultar aside */
+
+.ocultar-aside {
+  position: relative;
+  left: 90px;
+  top: 20px;
+  font-size: 18px;
+  cursor: pointer;
 }
 
 /* Estilos de account */
 
-.aside .account {
+header aside .account {
   margin: 20px;
   width: 100%;
   height: 150px;
@@ -232,24 +212,24 @@ header aside {
   justify-content: flex-start;
 }
 
-.aside .account ul li {
+header aside .account ul li {
   list-style: none;
 }
 
-.aside .account ul li a {
+header aside .account ul li a {
   margin: 20px 10px;
   display: flex;
   align-items: center;
   text-decoration: none;
 }
 
-.aside .account ul li a img {
+header aside .account ul li a img {
   margin-right: 15px;
 }
 
 /* estilos de options */
 
-.aside .options {
+header aside .options {
   width: 100%;
   height: 350px;
   align-self: flex-start;
@@ -259,24 +239,24 @@ header aside {
   justify-content: flex-start;
 }
 
-.aside .options ul li {
+header aside .options ul li {
   list-style: none;
 }
 
-.aside .options ul li a {
+header aside .options ul li a {
   margin: 27px 30px;
   display: flex;
   align-items: center;
   text-decoration: none;
 }
 
-.aside .options ul li a img {
+header aside .options ul li a img {
   margin-right: 15px;
 }
 
 /* estilos de language*/
 
-.aside .language {
+header aside .language {
   width: 100%;
   height: 60px;
   align-self: flex-start;
@@ -286,20 +266,20 @@ header aside {
   justify-content: flex-start;
 }
 
-.aside .language a {
+header aside .language a {
   margin: auto 30px;
   display: flex;
   align-items: center;
   text-decoration: none;
 }
 
-.aside .language a img {
+header aside .language a img {
   margin-right: 15px;
 }
 
 /* estilos de social */
 
-.aside .social {
+header aside .social {
   width: 100%;
   height: 120px;
   display: flex;
@@ -307,7 +287,7 @@ header aside {
   align-items: center;
 }
 
-.aside .social .text {
+header aside .social .text {
   width: 100%;
   text-align: center;
   font-size: 13px;
@@ -315,7 +295,7 @@ header aside {
   margin: 20px 30px;
 }
 
-.aside .social .imagenes {
+header aside .social .imagenes {
   width: 100%;
   display: flex;
   align-items: center;
@@ -323,14 +303,14 @@ header aside {
   padding: 0 15px;
 }
 
-.aside .social a img {
+header aside .social a img {
   width: 24px;
   background-color: #e7e5e5;
   border-radius: 2px;
   align-self: center;
 }
 
-.aside .social .text:nth-child(3) {
+header aside .social .text:nth-child(3) {
   font-size: 14px;
   font-weight: normal;
   align-self: flex-end;
