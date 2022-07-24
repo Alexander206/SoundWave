@@ -166,7 +166,8 @@ header aside {
   top: 0;
   right: -256px;
   width: 256px;
-  background-color: var(--ColorTexto-Azul-claro);
+  background: rgba(18, 18, 18, 0.588);
+  backdrop-filter: blur(35px);
   color: var(--ColorBlack);
   transition: 0.2s;
   z-index: 1;
