@@ -118,20 +118,22 @@ header .nav-center li a {
 /* Estilos nav-end */
 
 .button-blue {
-  background: radial-gradient(
-    87.8% 163.83% at 50% 50%,
-    #101010 0%,
-    #187ca2 100%
+  background: linear-gradient(
+    270deg,
+    #01b0c5 1.14%,
+    #02668c 78.61%,
+    #025075 105.16%
   );
   border-radius: 5px;
   border: none;
 }
 
 .button-blue:hover {
-  background: radial-gradient(
-    87.8% 163.83% at 50% 50%,
-    #272727 0%,
-    #178cbb 100%
+  background: linear-gradient(
+    270deg,
+    #00c8df 1.14%,
+    #047baa 78.61%,
+    #0576aa 105.16%
   );
 }
 
@@ -204,7 +206,7 @@ header aside {
 header aside .account {
   margin: 20px;
   width: 100%;
-  height: 150px;
+  height: 110px;
   align-self: flex-start;
   display: flex;
   flex-direction: column;
@@ -221,9 +223,12 @@ header aside .account ul li a {
   display: flex;
   align-items: center;
   text-decoration: none;
+  height: 25%;
+  width: 25%;
+  object-fit: contain;
 }
 
-header aside .account ul li a img {
+header aside .account ul li a i{
   margin-right: 15px;
 }
 
@@ -231,7 +236,7 @@ header aside .account ul li a img {
 
 header aside .options {
   width: 100%;
-  height: 350px;
+  height: 380px;
   align-self: flex-start;
   display: flex;
   flex-direction: column;
@@ -250,7 +255,7 @@ header aside .options ul li a {
   text-decoration: none;
 }
 
-header aside .options ul li a img {
+header aside .options ul li a i{
   margin-right: 15px;
 }
 
@@ -273,7 +278,7 @@ header aside .language a {
   text-decoration: none;
 }
 
-header aside .language a img {
+header aside .language a i {
   margin-right: 15px;
 }
 
@@ -303,12 +308,12 @@ header aside .social .imagenes {
   padding: 0 15px;
 }
 
-header aside .social a img {
+/*header aside .social a i {
   width: 24px;
   background-color: #e7e5e5;
   border-radius: 2px;
   align-self: center;
-}
+}*/
 
 header aside .social .text:nth-child(3) {
   font-size: 14px;
@@ -382,6 +387,8 @@ main {
   width: 220px;
   height: 47px;
   margin-right: 130px;
+  border: none;
+  border-radius: 5px;
 
   background: linear-gradient(
     270deg,
@@ -405,6 +412,11 @@ main {
 
 .premium img:last-child {
   width: 100%;
+}
+/*Estilos para los icons del aside*/
+
+i{
+  font-size: 30px;
 }
 
 /* Estilos para el footer */
